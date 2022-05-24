@@ -1,8 +1,14 @@
+const product = require("../models/product");
 
-exports.getProduct = (req, res)=>{
-    res.send("product list")
-}
 
 exports.addproduct = (req, res)=>{
-    res.send("product added")
+    
 }
+
+exports.getProduct = (req, res)=>{
+    res.status(200).json({
+        success : true,
+        message : "Show All products"
+    })
+}
+
