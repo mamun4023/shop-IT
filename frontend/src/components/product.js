@@ -6,12 +6,12 @@ import {
 
 } from 'react-bootstrap';
 
-function BasicExample() {
+function Product({name, description, price, url }) {
   return (
     <Card style={{ width: '15rem' }}>
         <Card.Img 
             variant="top" 
-            src="https://www.gadstyle.com/wp-content/uploads/2022/08/urbanista-los-angeles-solar-powered-active-noise-cancelling-headphones-with-infinite-playtime-1-600x600.webp" 
+            src={url}
             style={{
                 maxHeight : "13rem",
                 // maxWidth : "10rem"
@@ -19,12 +19,12 @@ function BasicExample() {
         />
       <Stack className='text-center'> 
       <Card.Body>
-        <Card.Title>Head Phone</Card.Title>
+        <Card.Title> {name}</Card.Title>
         <Card.Text>
-          Better sound quality with noice cancelling feature
+            {description}
         </Card.Text>
         <Card.Text className='fw-bold'>
-          $120.00
+          ${price}
         </Card.Text>
         <Button variant="outline-primary "> Add Cart</Button>
       </Card.Body>
@@ -33,4 +33,4 @@ function BasicExample() {
   );
 }
 
-export default BasicExample;
+export default Product;

@@ -14,6 +14,7 @@ function NavScrollExample() {
         <Navbar.Brand href="#">Shop IT</Navbar.Brand>
             <div
                 style={{ margin : "auto"}}
+                className = ""
             >
                 <Form className="d-flex">
                     <Form.Control
