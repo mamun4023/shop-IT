@@ -1,20 +1,63 @@
 import {
     Row,
-    Col
+    Col,
+    Stack,
+    Container
 
 } from 'react-bootstrap';
 
 
 function Footer(){
     return(
-        <>
+        <Container fluid>
         
-            <Row>
-                <Col> 1 </Col>
-                <Col> 2 </Col>
-                <Col> 3 </Col>
+            <Row
+                className='bg-primary text-white p-5'
+                style = {{
+                  position : "fixed",
+                  right : '0',
+                  left : "0",
+                  bottom : '0'
+                }}
+            >
+                <Col>
+                    <Stack gap={2}>
+                        <div> Shop IT</div>
+                        <div> About Us</div>
+                        <div>Contact </div> 
+
+
+                    </Stack>
+                </Col>
+                <Col> 
+                    <Stack gap={2}>
+                        <div> Shop IT</div>
+                        <div> About Us</div>
+                        <div>Contact </div> 
+
+
+                    </Stack>
+                </Col>
+                <Col> 
+                    <Stack gap={2}>
+                        <div> Shop IT</div>
+                        <div> About Us</div>
+                        <div>Contact </div> 
+
+
+                    </Stack>
+                </Col>
+                <Col> 
+                    <Stack gap={2}>
+                        <div> Shop IT</div>
+                        <div> About Us</div>
+                        <div>Contact </div> 
+
+
+                    </Stack>
+                </Col>
             </Row>
-        </>
+        </Container>
     )
 }
 

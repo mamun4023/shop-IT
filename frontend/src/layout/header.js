@@ -1,10 +1,10 @@
-
-
 import {
     Container,
     Button,
     Form,
     Navbar,
+    Stack,
+    Badge,
 } from 'react-bootstrap';
 
 function NavScrollExample() {
@@ -22,13 +22,23 @@ function NavScrollExample() {
                     placeholder="Search Product"
                     className="me-2"
                     aria-label="Search"
-                    style={{minWidth : "400px"}}
+                    style={{minWidth : "100%"}}
                     />
                     <Button variant="outline-primary">Search</Button>
                 </Form>
             </div>
-                 <Button > SignUp</Button>
-                <Button  className='m-1'> Login</Button>
+                
+                <Stack
+                   direction="horizontal"
+                   gap={2}
+                > 
+                `    <Button variant="primary">
+                        Cart <Badge bg="secondary"> 0 </Badge>
+                        <span className="visually-hidden">unread messages</span>
+                    </Button>
+                    <Button > SignUp</Button>
+                    <Button > Login</Button>`
+                </Stack>
       </Container>
     </Navbar>
   );
