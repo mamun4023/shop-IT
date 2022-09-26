@@ -26,7 +26,7 @@ exports.addProduct = CatchAsyncError( async (req, res, next)=>{
 
 // get all products
 exports.getProduct = async (req, res)=>{
-    const rowPerPage = 2;
+    const rowPerPage = 10;
     const apiFeatures = new APIFeatres(Product.find(), req.query)
                         .search()
                         .filter()
