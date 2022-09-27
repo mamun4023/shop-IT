@@ -14,7 +14,7 @@ function Footer(){
             <Row
                 className='bg-primary text-white p-5'
                 style = {{
-                  position : "fixed",
+                  position : "relative",
                   right : '0',
                   left : "0",
                   bottom : '0'
@@ -25,8 +25,6 @@ function Footer(){
                         <div> Shop IT</div>
                         <div> About Us</div>
                         <div>Contact </div> 
-
-
                     </Stack>
                 </Col>
                 <Col> 
@@ -34,8 +32,6 @@ function Footer(){
                         <div> Shop IT</div>
                         <div> About Us</div>
                         <div>Contact </div> 
-
-
                     </Stack>
                 </Col>
                 <Col> 
@@ -43,8 +39,6 @@ function Footer(){
                         <div> Shop IT</div>
                         <div> About Us</div>
                         <div>Contact </div> 
-
-
                     </Stack>
                 </Col>
                 <Col> 
@@ -52,8 +46,6 @@ function Footer(){
                         <div> Shop IT</div>
                         <div> About Us</div>
                         <div>Contact </div> 
-
-
                     </Stack>
                 </Col>
             </Row>

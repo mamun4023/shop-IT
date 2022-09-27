@@ -5,15 +5,16 @@ import {
     Card
 
 } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 function Product({name, description, price, url }) {
   return (
-    <Card style={{ width: '15rem' }}>
+    <Card style={{ width: '15rem', height : "400px" }}>
         <Card.Img 
             variant="top" 
             src={url}
             style={{
-                maxHeight : "13rem",
+                height : "13rem",
                 // maxWidth : "10rem"
             }}
         />
@@ -26,7 +27,16 @@ function Product({name, description, price, url }) {
         <Card.Text className='fw-bold'>
           ${price}
         </Card.Text>
-        <Button variant="outline-primary "> Add Cart</Button>
+        <Stack gap= {2} direction="horizontal"
+          style={{
+            marginLeft : "15px"
+          }}
+        > 
+          <Button  size="sm"  variant="outline-primary "> Add Cart</Button>
+          <Button  size="sm"  variant="outline-primary "> Buy </Button>
+          <Link  to= '/view'  className='btn btn-outline-primary btn-sm'> View </Link>
+        </Stack>
+        
       </Card.Body>
       </Stack>
     </Card>

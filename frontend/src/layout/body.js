@@ -15,10 +15,7 @@ function Body(){
         dispatch(FetchProducts())
     },[])
 
-    const {products} = useSelector(state => state.Products) 
-
-
-   
+    const {products} = useSelector(state => state.Products)
 
     return(
         <Container className='m-4'>
@@ -26,7 +23,7 @@ function Body(){
                 <Stack 
                     direction="horizontal" 
                     gap={3}
-                    className = "flex-nowrap"
+                    className="d-flex flex-row flex-wrap"
                     
                      
                 > 
