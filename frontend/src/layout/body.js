@@ -34,6 +34,7 @@ function Body(){
                                 description = {data.description??data.description}
                                 price = {data.price??data.price}
                                 url = {data.images[0]?.url}
+                                productId = {data._id}
                             />
                             )
                     }

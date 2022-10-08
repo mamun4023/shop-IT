@@ -7,7 +7,7 @@ import {
 } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
-function Product({name, description, price, url }) {
+function Product({name, description, price, url, productId }) {
   return (
     <Card style={{ width: '15rem', height : "400px" }}>
         <Card.Img 
@@ -34,7 +34,7 @@ function Product({name, description, price, url }) {
         > 
           <Button  size="sm"  variant="outline-primary "> Add Cart</Button>
           <Button  size="sm"  variant="outline-primary "> Buy </Button>
-          <Link  to= '/view'  className='btn btn-outline-primary btn-sm'> View </Link>
+          <Link  to= {`/product/${productId}`}  className='btn btn-outline-primary btn-sm'> View </Link>
         </Stack>
         
       </Card.Body>
