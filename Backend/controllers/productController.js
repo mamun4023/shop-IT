@@ -43,11 +43,15 @@ exports.getProduct = async (req, res)=>{
 
 // get single products
 exports.getSingleProduct = async (req, res, next) =>{
-    const product = await Product.findById(req.params.id);
+    const product = await Product.findById({_id : req.params.id});
+
+    
 
     if(!product){
         return next(new ErrorHandler("Product not found", 404))
     }
+
+    res.send(product)
 }
 
 
